@@ -47,9 +47,6 @@
         font-size: 13px;
         font-family: $CodeFont;
         color: $Slate;
-        span{
-          padding-bottom: 5px;
-        }
 
         &:before {
             content: '▹';
@@ -100,6 +97,12 @@
                 display: none;
             }
         }
+    }
+}
+
+@media (max-width: 768px){
+    .logo-about{
+        max-height: 150px;
     }
 }
 
