@@ -1,5 +1,5 @@
 {
-  "name": "mv-front-angular-portfolio",
+  "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,7 @@
     "build": "ng build",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy-prod": "npm run deploy",
-    "deploy": "ng build --configuration production --base-href 'https://mv-front-angular.github.io/portfolio/'"
+    "deploy": "ng build --configuration production --base-href '/portfolio/' && npx angular-cli-ghpages --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
