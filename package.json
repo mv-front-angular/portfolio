@@ -8,8 +8,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy-prod": "npm run deploy",
-    "build2": "ng build --configuration production --base-href 'https://mv-front-angular.github.io/portfolio/'",
-    "deploy": "ng build --configuration production --base-href /portfolio/ && ngh --dir=dist/mv-front-angular-portfolio "
+    "deploy": "ng build --configuration production --base-href 'https://mv-front-angular.github.io/portfolio/'"
   },
   "private": true,
   "dependencies": {
