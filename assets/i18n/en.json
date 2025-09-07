@@ -11,7 +11,7 @@
     "AboutMe.Title": "Sobre mim",
     "AboutMe.Paragraphs": [
         "Desenvolvedor front-end com mais de 15 anos de experiência em aplicações web de alta performance para ambientes críticos de negócio.",
-        "Especialista em Angular, RxJS, Design Systems, Micro Front-ends e CI/CD, focado em otimizar aplicações, padronizar interfaces e entregar soluções eficientes.",
+        "Especialista em Angular, NgRx, Design Systems, Micro Front-ends e CI/CD, focado em otimizar aplicações, padronizar interfaces e entregar soluções eficientes.",
         "Experiência consolidada em <span class='underline'>testes unitários</span> e <span class='underline'>integração contínua (CI/CD)</span>, garantindo entregas confiáveis e de qualidade."
     ],
     "Experience.Title": "Experiência",
