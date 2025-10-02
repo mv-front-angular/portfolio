@@ -1,0 +1,27 @@
+{
+  "experience": [
+    {
+      "tab": "Mercado Financeiro",
+      "title": "Especialista front-end",
+      "date": "2019 - Atual",
+      "description": [
+        "Liderança técnica em projetos de integrações e APIs para o segmento Private & Corporate.",
+        "Desenvolvimento de soluções escaláveis e de alta performance utilizando AngularJS, Angular, JavaScript, (X)HTML5, CSS3, Bootstrap e Material UI.",
+        "Implementação de micro front-ends, automação de tarefas com Gulp, otimização de builds com Webpack e integração com APIs REST.",
+        "Utilização de Design System Orquestra e testes unitários com Jest e Jasmine.",
+        "Atuação com processos ágeis (Kanban e Scrum), infraestrutura de CI/CD (Jenkins) e colaboração com UX (Figma) para entrega de soluções consistentes e padronizadas."
+      ]
+    },
+    {
+      "tab": "Atech - Grupo Embraer",
+      "title": "Desenvolvedor Front-End",
+      "date": "Agosto de 2018 - Outubro de 2019",
+      "description": [
+        "Desenvolvimento de aplicações web para os segmentos de aeronáutica e meteorologia.",
+        "Criação de interfaces responsivas e padronizadas utilizando Angular, jQuery, (X)HTML5, CSS3, Bootstrap e Material UI.",
+        "Automação de tarefas com Grunt e Gulp, além de otimização de builds com Webpack.",
+        "Integração com APIs REST e implementação de componentes para Design System."
+      ]
+    }
+  ]
+}

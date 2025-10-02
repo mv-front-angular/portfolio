@@ -1,0 +1,66 @@
+{
+    "featureProjects": [
+        {
+            "title": "Navita Connect",
+            "description": "O Navita Connect é uma plataforma de <span class='underline'>EMM (Enterprise Mobility Management)</span> e <span class='underline'>ITEM (IT Expense Management)</span>, utilizada por mais de <span class='underline'>250 mil empresas</span> em dezenas de países. Selecionada pela <span class='underline'>Telefónica</span> como solução global de <span class='underline'>EMM</span> e <span class='underline'>TEM (Telecom Expense Management)</span>, a plataforma gerencia mais de <span class='underline'>2,7 milhões de recursos</span> de <span class='underline'>mobilidade</span>, <span class='underline'>telefonia</span>, além de <span class='underline'>ativos digitais e físicos de TI</span>.",
+            "imgs": [
+                "assets/images/cases/connect.png"
+            ],
+            "demoLink": "https://navita.com.br/produtos/navita-connect/",
+            "technologies": [
+                "AngularJS",
+                "SASS",
+                "Angular Material",
+                "API Rest",
+                "Bootstrap",
+                "backbone.js"
+            ]
+        },
+        {
+            "title": "Guia Mais",
+            "description": "GuiaMais é uma empresa especializada em <span class='underline'>Marketing Digital</span>, focada em oferecer <span class='underline'>soluções acessíveis e eficazes</span> para <span class='underline'>micro, pequenas e médias empresas</span>. Sua proposta é ajudar negócios a <span class='underline'>se destacarem no ambiente online</span>, <span class='underline'>aumentando a visibilidade</span>, <span class='underline'>atraindo novos clientes</span> e <span class='underline'>potencializando resultados</span>.",
+            "imgs": [
+                "assets/images/cases/guiamais.png",
+                "assets/images/cases/guia-viagens.png",
+                "assets/images/cases/guia-mobile.png"
+            ],
+            "demoLink": "https://www.guiamais.com",
+            "technologies": [
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "Sass",
+                "API REST"
+            ]
+        },
+        {
+            "title": "Brasilanea",
+            "description": "Brasilanea é uma agência de <span class='underline'>turismo</span> que oferece <span class='underline'>passeios e experiências personalizadas</span> pelo Brasil. Especializada em conectar viajantes à <span class='underline'>cultura, natureza e gastronomia locais</span>, proporciona <span class='underline'>viagens seguras, únicas e inesquecíveis</span>.",
+            "imgs": [
+                "assets/images/cases/brasilanea.jpg"
+            ],
+            "technologies": [
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "Sass",
+                "API REST"
+            ]
+        },
+        {
+            "title": "Click0n",
+            "description": "<span class='underline'>ClickOn</span> foi um <span class='underline'>site brasileiro de compras coletivas</span>, especializado em oferecer <span class='underline'>descontos significativos</span> em serviços como <span class='underline'>restaurantes</span>, <span class='underline'>spas</span>, <span class='underline'>cinemas</span> e <span class='underline'>viagens</span>. Atuava como <span class='underline'>intermediário entre consumidores e estabelecimentos</span>, permitindo que ofertas fossem ativadas mediante um <span class='underline'>número mínimo de compradores</span>.",
+            "imgs": [
+                "assets/images/cases/zarpo.png",
+                "assets/images/cases/viajanet.png"
+            ],
+            "demoLink": "https://profile.needlemusic.co/bub",
+            "technologies": [
+                "JavaScript",
+                "HTML5",
+                "CSS3",
+                "jQuery"
+            ]
+        }
+    ]
+}

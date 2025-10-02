@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
 import {trigger, state, style, animate, transition, stagger, query } from "@angular/animations"
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { PortfolioService } from 'src/app/services/data/portfolio.service';
 
 @Component({
   selector: 'app-banner',
@@ -24,14 +24,25 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
   ]
 })
 export class BannerComponent implements OnInit {
-
-  
+  bannerData: any;
 
   constructor(
-    public analyticsService: AnalyticsService
+    public analyticsService: AnalyticsService,
+    private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void { 
+    this.portfolioService.getBanner().subscribe(
+      data => {
+        console.log('Banner data received:', data);
+        if (data && data.length > 0) {
+          this.bannerData = data[0];
+        }
+      },
+      error => {
+        console.error('Error getting banner data:', error);
+      }
+    );
   }
   
 

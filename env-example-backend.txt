@@ -1,0 +1,26 @@
+# Environment Configuration
+NODE_ENV=production
+
+# Server Configuration
+PORT=3000
+
+# MongoDB Configuration
+MONGODB_URI=mongodb://localhost:27017/portfolio
+MONGODB_HOST=localhost
+MONGODB_PORT=27017
+MONGODB_DB_NAME=portfolio
+MONGODB_USERNAME=
+MONGODB_PASSWORD=
+
+# Frontend Configuration
+FRONTEND_URL=http://localhost:4200
+
+# Production MongoDB Configuration (MongoDB Atlas example)
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/portfolio?retryWrites=true&w=majority
+# MONGODB_USERNAME=your_username
+# MONGODB_PASSWORD=your_password
+# MONGODB_HOST=cluster.mongodb.net
+# MONGODB_DB_NAME=portfolio
+
+# Production Frontend URL
+# FRONTEND_URL=https://mv-front-angular.github.io

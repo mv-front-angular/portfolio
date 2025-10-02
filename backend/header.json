@@ -1,0 +1,9 @@
+{
+  "header": [
+    {
+      "items": ["Sobre mim", "Experiência", "Projetos", "Contato"],
+      "cvBtn": "Currículo",
+      "cvName": "CV-MV.pdf"
+    }
+  ]
+}

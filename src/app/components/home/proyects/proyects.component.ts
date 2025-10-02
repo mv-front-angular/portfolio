@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { PortfolioService } from 'src/app/services/data/portfolio.service';
 
 @Component({
   selector: 'app-proyects',
@@ -8,6 +9,7 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
   styleUrls: ['./proyects.component.scss']
 })
 export class ProyectsComponent implements OnInit {
+  projects: any[] = [];
 
   customOptions: OwlOptions = {
     loop: true,
@@ -22,15 +24,17 @@ export class ProyectsComponent implements OnInit {
 
   @ViewChild('imgContainer') imgContainer: ElementRef;
 
-
   constructor(
-    public analyticsService: AnalyticsService
+    public analyticsService: AnalyticsService,
+    private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
-
-
-
+    this.portfolioService.getFeatureProjects().subscribe(data => {
+      if (data) {
+        this.projects = data;
+      }
+    });
   }
 
 debug(){

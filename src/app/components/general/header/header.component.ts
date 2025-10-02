@@ -5,7 +5,7 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { TranslateService } from '@ngx-translate/core';
 import { FormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
-import { ThisReceiver } from '@angular/compiler';
+import { PortfolioService } from 'src/app/services/data/portfolio.service';
 
 
 @Component({
@@ -35,20 +35,29 @@ export class HeaderComponent implements OnInit {
   responsiveMenuVisible: Boolean = false;
   pageYPosition: number;
   languageFormControl: FormControl= new FormControl();
-  cvName: string = "CV-MV.pdf";
+  headerData: any;
+  cvName: string;
+  menuItems: string[];
 
   constructor(
     private router: Router,
     public analyticsService: AnalyticsService,
-    public languageService: LanguageService
+    public languageService: LanguageService,
+    private portfolioService: PortfolioService
   ) { }
 
   ngOnInit(): void {
+    this.portfolioService.getHeader().subscribe(data => {
+      if (data && data.length > 0) {
+        this.headerData = data[0];
+        this.menuItems = this.headerData.items;
+        this.cvName = this.headerData.cvName;
+      }
+    });
 
     this.languageFormControl.valueChanges.subscribe(val => this.languageService.changeLanguage(val))
 
     this.languageFormControl.setValue(this.languageService.language)
-
   }
 
   scroll(el) {
@@ -61,15 +70,11 @@ export class HeaderComponent implements OnInit {
   }
 
   downloadCV(){
-    this.languageService.translateService.get("Header.cvName").subscribe(val => {
-      this.cvName = val
-      console.log(val)
-      // app url
-      let url = window.location.href;
+    // app url
+    let url = window.location.href;
 
-      // Open a new window with the CV
-      window.open(url + "/../assets/cv/" + this.cvName, "_blank");
-    })
+    // Open a new window with the CV
+    window.open(url + "/../assets/cv/" + this.cvName, "_blank");
 
   }
 
